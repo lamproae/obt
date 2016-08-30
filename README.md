@@ -1,8 +1,14 @@
 # obt
-Auto-Test frame work for net devices
+Auto-Test framework for net devices
 # Tester
+"测试客户端实例，提供用例注册，用例删除，执行用例，检查用例执行结果等功能"
 # Session
+"保存一个已有的链接，提供打开/关闭/读取/写入接口"
 # Asserter
+"包含一组字符串处理函数，从CLI输出结果找查找预期值，检查输出结果与预期值是否匹配"
 # Config
+"保存设备初始配置：用户名，密码，IP, 链接方式，设备名称"
 # Case
+"Case 用来保存一个测试用例，该用例包含一组输入命令，和一组输出命令与预期结构的映射"
 # Command
+"包含一条命令及其对应的模式(mode)"
