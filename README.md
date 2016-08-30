@@ -2,6 +2,8 @@
 Auto-Test framework for net devices
 # Tester
 "测试客户端实例，提供用例注册，用例删除，执行用例，检查用例执行结果等功能"
+"Tester 包含一个session map，该map用来保存DUT到其对应session的映射"
+"Tester 在启动的时候读取（-f）case配置文件，从相应的配置文件获取DUT及其配置信息，并创建相应的session. 也可以通过-h参数来指定单个host，此时Tester只提供简单的命令传输任务，不带任何参数的执行只打印使用方法"
 # Session
 "保存一个已有的链接，提供打开/关闭/读取/写入接口"
 # Asserter
@@ -10,5 +12,8 @@ Auto-Test framework for net devices
 "保存设备初始配置：用户名，密码，IP, 链接方式，设备名称"
 # Case
 "Case 用来保存一个测试用例，该用例包含一组输入命令，和一组输出命令与预期结构的映射"
+"Case 包含一组待测设备(DUT)，以及对各待测设备将要执行的操作，执行结果检测命令及预期结果"
+# DUT
+"DUT是一个待测设备的实例，其中保存了该待测设备的名称，及其配置信息"
 # Command
 "包含一条命令及其对应的模式(mode)"
